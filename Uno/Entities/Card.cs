@@ -1,5 +1,4 @@
-﻿using System;
-using Uno.Entities.Enums;
+﻿using Uno.Entities.Enums;
 
 namespace Uno.Entities
 {
@@ -14,10 +13,17 @@ namespace Uno.Entities
 
         }
 
+        public Card(CardColor color)
+        {
+            Color = color;
+        }
+
         public Card(CardColor color, int value)
         {
             Color = color;
             Value = value;
         }
+
+        
     }
 }
